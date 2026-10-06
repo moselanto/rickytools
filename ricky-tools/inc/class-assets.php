@@ -22,13 +22,15 @@ final class Assets {
 		add_filter( 'script_loader_tag', array( $this, 'defer_scripts' ), 10, 3 );
 		// Trim WooCommerce bloat on non-woo pages (perf).
 		add_action( 'wp_enqueue_scripts', array( $this, 'dequeue_woo_bloat' ), 99 );
-			add_action( 'init', array( $this, 'trim_head' ) );
+		add_action( 'init', array( $this, 'trim_head' ) );
 	}
 
 	public function enqueue(): void {
 		$css_rel = file_exists( RICKY_DIR . 'assets/css/theme.min.css' ) ? 'assets/css/theme.min.css' : 'assets/css/theme.css';
 		wp_enqueue_style( 'ricky-theme', RICKY_URI . $css_rel, array(), RICKY_VERSION );
-		wp_style_add_data( 'ricky-theme', 'rtl', 'replace' );
+		if ( file_exists( RICKY_DIR . str_replace( '.css', '-rtl.css', $css_rel ) ) ) {
+			wp_style_add_data( 'ricky-theme', 'rtl', 'replace' );
+		}
 
 		wp_enqueue_script( 'ricky-theme', RICKY_URI . 'assets/js/theme.js', array(), RICKY_VERSION, true );
 

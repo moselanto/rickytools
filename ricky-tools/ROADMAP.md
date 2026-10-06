@@ -1,23 +1,23 @@
 # Ricky Tools - Build Roadmap
 
-**Delivered in v1.0.0 (this package):** architecture, folder structure, design system,
-header, footer, homepage builder, WooCommerce integration + uniform cards, AJAX add-to-cart +
-live search, security hardening, SEO/schema, Merchant-Center content pages, Customizer, plugin
-installer config, child theme, docs.
+## Delivered (up to v1.17.0)
+- Architecture, namespaced autoloader, guarded module bootstrap
+- Design system, header, footer, homepage (hero, trust band, category cards, per-category product rows)
+- WooCommerce integration: uniform cards, badges, AJAX add-to-cart, mini-cart drawer, live search
+- Shop filters (category, brand, price, stock) with filter chips and custom sorting
+- Single product: delivery/trust block, Specifications + FAQ tabs, recently viewed, sticky add-to-cart bar, Order on WhatsApp
+- Cart, checkout and thank-you trust elements
+- Security hardening, SEO meta + JSON-LD schema (steps aside for Yoast / Rank Math / AIOSEO)
+- Auto-created, Merchant-Center-ready policy pages and menus
+- Merchant Compliance Inspector (WooCommerce > Merchant Compliance)
+- One Click Demo Import package (`demo/content.xml`, 42 products)
+- TGMPA plugin installer, Customizer, translation template
+- Child theme (`ricky-tools-child/`) and Ricky WebP Optimizer plugin
 
-**Planned next phases (not yet in this package):**
-
-1. **Advanced filters widget** — brand / price / rating / availability / colour / power / voltage
-   as an AJAX-filtered shop sidebar (`sidebar.php` + widget area are already wired).
-2. **Single-product enhancements** — sticky add-to-cart bar, delivery-estimate block, trust
-   badges, secure-payment icons, spec/downloads/FAQ tabs, related + recently viewed + cross-sell.
-3. **Quick View modal** — currently links to product; upgrade to an AJAX modal.
-4. **Compare page** — deep-link + YITH Compare styling.
-5. **One-Click Demo Import package** — bundled `demo/content.xml`, widgets, customizer export, and
-   an OCDI config so a new site looks finished instantly.
-6. **Per-template critical CSS** — extract above-the-fold CSS per template for 95+/90+ PageSpeed.
-7. **QA matrix** — cross-browser + device testing checklist and WCAG 2.2 AA audit.
-8. **ThemeForest packaging** — documentation site, screenshots, theme-check pass, PHPCS
-   (WordPress-Extra) + PHPStan max clean run.
-
-Tell Ray which phase to build next and it will continue.
+## Next
+1. Compare page (deep-link + compare plugin styling).
+2. Per-template critical CSS for 95+ mobile PageSpeed.
+3. Full `.pot` string extraction (`wp i18n make-pot`).
+4. RTL stylesheet (`theme.min-rtl.css`).
+5. QA matrix: cross-browser/device checklist and WCAG 2.2 AA audit.
+6. PHPCS (WordPress-Extra) + PHPStan clean run and theme-check pass.

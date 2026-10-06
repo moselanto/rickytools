@@ -14,7 +14,7 @@ Select all and choose **Install**, then **Activate**. Required set:
 - WooCommerce (the shop engine)
 - Perfect Brands for WooCommerce (your 81 brands)
 - One Click Demo Import (the demo importer)
-- Elementor, Contact Form 7 (page building + contact form)
+Optional (offered, not required): Elementor, Contact Form 7.
 Recommended: Rank Math SEO, LiteSpeed Cache, WP Mail SMTP, Variation Swatches,
 Google Listings & Ads, PDF Invoices, Wishlist, Compare.
 
@@ -35,6 +35,10 @@ The demo loads a sample. To load your entire catalogue:
 **Products -> Import -> upload `product_export_COMPLETE.csv`** and run it (mapping guide in
 `IMPORT-PRODUCTS.md`). This brings in all 546 products with images. Existing sample products
 with the same SKU are updated, not duplicated.
+
+## Step 4b - Activate the child theme
+Upload `ricky-tools-child.zip` and activate it, so your own CSS and template changes survive parent updates.
+Customizer values are stored per theme, so re-check Customize -> Ricky Tools after switching.
 
 ## Step 5 - Brand it
 - Upload your logo: Appearance -> Customize -> Site Identity (use `assets/img/logo.webp`).

@@ -1,4 +1,4 @@
-# Ricky Tools - Premium WooCommerce Theme (v1.0.0)
+# Ricky Tools - Premium WooCommerce Theme (v1.17.0)
 
 A fast, secure, conversion-focused WooCommerce theme for power tools, solar, and hardware
 retail in Kenya. Brand colours: **Yellow `#FDB913`** + **Dark Blue `#0B1E3F`**.
@@ -7,7 +7,7 @@ Built for **WordPress 6.5+**, **WooCommerce 9+**, **PHP 8.1+** (8.3 ready).
 
 ---
 
-## What's inside (v1.0.0 foundation)
+## What's inside
 
 - **Object-oriented, namespaced** codebase (`RickyTools\`) with an autoloader — no global soup.
 - **Header**: top contact bar (phone/WhatsApp/email/hours), logo, intelligent AJAX search
@@ -44,11 +44,10 @@ Built for **WordPress 6.5+**, **WooCommerce 9+**, **PHP 8.1+** (8.3 ready).
 1. In WordPress: **Appearance → Themes → Add New → Upload Theme** → upload `ricky-tools.zip` → **Activate**.
 2. On activation the theme prompts you to install the required plugins (TGMPA). Install at least
    **WooCommerce** and **Perfect Brands for WooCommerce**, then the recommended ones.
-   > Before shipping/using: place the TGMPA library at
-   > `inc/tgmpa/class-tgm-plugin-activation.php` (download from https://tgmpluginactivation.com/).
+   The TGMPA library is already bundled at `inc/tgmpa/class-tgm-plugin-activation.php`.
 3. On activation, all legal/info **Pages and menus are created automatically**. Edit any of them
    under **Pages** — the content is real, not placeholder.
-4. Upload your logo at **Appearance → Customize → Site Identity** (use the supplied `RICKY-LOGO.webp`).
+4. Upload your logo at **Appearance → Customize → Site Identity** (use `assets/img/logo.webp`).
 5. Set brand colours + contact details under **Customize → Ricky Tools**.
 6. Import your products (see `IMPORT-PRODUCTS.md`).
 7. Set **Settings → Reading → Homepage displays → A static page** and pick a page, or leave the
@@ -56,8 +55,9 @@ Built for **WordPress 6.5+**, **WooCommerce 9+**, **PHP 8.1+** (8.3 ready).
 
 ## Child theme
 
-Use `ricky-tools-child/` for any custom code so updates never overwrite your changes. Zip that
-folder separately and install it the same way, then activate the child.
+Use [`ricky-tools-child/`](../ricky-tools-child) (in this repository) for any custom code so updates
+never overwrite your changes. Zip that folder separately, install it the same way, then activate the
+child. Customizer values are stored per theme, so re-check **Customize > Ricky Tools** after switching.
 
 ## Requirements
 
@@ -71,6 +71,5 @@ folder separately and install it the same way, then activate the child.
 
 ## Roadmap (phases still to build)
 
-See `ROADMAP.md` for the remaining phases (advanced product filters widget, single-product
-trust-badge/delivery-estimate block, one-click demo importer package, compare page, PageSpeed
-critical-CSS per template, QA matrix, and ThemeForest packaging checklist).
+See `ROADMAP.md` for what is delivered and what is next (compare page, per-template critical CSS,
+full translation strings, RTL stylesheet, QA matrix and code-standards pass).

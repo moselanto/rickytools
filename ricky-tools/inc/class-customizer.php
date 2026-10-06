@@ -42,7 +42,7 @@ final class Customizer {
 	}
 
 	private function color( $wp, string $id, string $default, string $label ): void {
-		$wp->add_setting( $id, array( 'default' => $default, 'sanitize_callback' => 'sanitize_hex_color', 'transport' => 'postMessage' ) );
+		$wp->add_setting( $id, array( 'default' => $default, 'sanitize_callback' => 'sanitize_hex_color', 'transport' => 'refresh' ) );
 		$wp->add_control( new \WP_Customize_Color_Control( $wp, $id, array( 'label' => $label, 'section' => 'ricky_colors' ) ) );
 	}
 

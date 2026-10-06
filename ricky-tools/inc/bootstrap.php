@@ -22,7 +22,7 @@ $ricky_modules = array(
 	'RickyTools\\Content_Installer',
 	'RickyTools\\Demo_Import',
 	'RickyTools\\Single_Product',
-		'RickyTools\\Merchant_Inspector',
+	'RickyTools\\Merchant_Inspector',
 );
 
 foreach ( $ricky_modules as $ricky_class ) {

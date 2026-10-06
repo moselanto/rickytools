@@ -1,0 +1,18 @@
+/*
+Theme Name: Ricky Tools Child
+Theme URI: https://rickytools.com/
+Template: ricky-tools
+Author: Ricky Tools
+Author URI: https://rickytools.com/
+Description: Child theme for Ricky Tools. Put all site-specific customisations here (CSS, template overrides, filters) so they survive parent-theme updates.
+Version: 1.0.0
+Requires at least: 6.5
+Requires PHP: 8.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ricky-tools-child
+*/
+
+/* Add your custom CSS below. Brand colours are CSS custom properties set from the Customizer:
+:root{ --rk-yellow:#FDB913; --rk-navy:#0B1E3F; }
+*/
